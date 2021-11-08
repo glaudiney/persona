@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<title>Atividade Persona</title>
+	<meta charset="utf-8" />
+<script>
+		
+function getRandom(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+document.addEventListener("DOMContentLoaded", function(){ 
+
+	document.getElementById("habito").src = './' + getRandom(1,12) + '.png';
+	document.getElementById("similar").src = '../../Similares/' + getRandom(1,46) + '.png';
+	document.getElementById("sinetica").src = '../../Sinetica/' + getRandom(1,46) + '.png';
+
+				
+});
+			
+</script>
+	</head>
+	<body>
+		<img src="persona.png" class="" id="persona" alt="Persona" height="350"/>
+		<img src="1.png" class="" id="habito" alt="Hábito" height="350"/>
+		<img src="../../Similares/1.png" class="" id="similar" alt="Similar" height="350"/>
+		<img src="../../Sinetica/1.png" class="" id="sinetica" alt="Sinetica" height="350"/>
+		<!--Aqui você carrega a imagem de sua escolha -->
+		<br />
+	</body>
+</html>
